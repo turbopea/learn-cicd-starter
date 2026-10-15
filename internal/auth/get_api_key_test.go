@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 
 func TestGetAPIKeyMissingHeader(t *testing.T) {
 	headers := http.Header{
-		"Authorization": {"ApiKey aaa"},
+		"Authorization": {"ApiKey"},
 	}
 	got, err := GetAPIKey(headers)
 	if err == nil {
