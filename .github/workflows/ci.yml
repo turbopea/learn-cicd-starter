@@ -35,8 +35,8 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: "1.27.1"
-      - name: Unit tests for GetAPIKey with code coverage
-        run: (test -z $(go fmt .)
+      - name: Checking code formatting
+        run: (test -z $(go fmt)
 
       - name: Exit with code 0
         run: (exit 0)
