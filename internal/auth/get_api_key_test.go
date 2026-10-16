@@ -1,10 +1,9 @@
 package auth
 
 import (
-	"testing"
-	"reflect"
 	"net/http"
-	
+	"reflect"
+	"testing"
 )
 
 func TestGetAPIKey(t *testing.T) {
@@ -38,8 +37,7 @@ func TestGetAPIKeyMissingHeader(t *testing.T) {
 
 func TestGetAPIKeyMalformed(t *testing.T) {
 	headers := http.Header{
-		"Authorization": {"ApiKy wwwaaa"}, 
-
+		"Authorization": {"ApiKy wwwaaa"},
 	}
 
 	_, err := GetAPIKey(headers)
