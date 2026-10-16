@@ -23,7 +23,7 @@ jobs:
       - name: Exit with code 0
         run: (exit 0)
 jobs:
-  style:
+  tests:
     name: Style
     runs-on: ubuntu-latest
 
