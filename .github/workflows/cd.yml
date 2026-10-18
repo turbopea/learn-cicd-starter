@@ -26,8 +26,8 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v3
       - name: Use gcloud CLI
-        run: gcloud info
-      - name: Builds docker image and pushes to google artifact registry
-        run: gcloud builds submit --tag user-central1-docker.pkg.dev/project-d1b773db-4f9a-4f2b-a18/notely-ar-repo/notely:latest .
+        run: (gcloud info)
+      - name: (Builds docker image and pushes to google artifact registry)
+        run: (gcloud builds submit --tag user-central1-docker.pkg.dev/project-d1b773db-4f9a-4f2b-a18/notely-ar-repo/notely:latest .)
 
 
